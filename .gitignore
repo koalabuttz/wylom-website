@@ -1,3 +1,6 @@
+# Generated deployment files
+/_site/
+
 # Local verification notes and generated screenshots
 /VERIFICATION.md
 /verification-*.png

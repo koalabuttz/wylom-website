@@ -70,7 +70,23 @@ theme.js
 
 Any static host can serve them. There is no build command and no server-side runtime. If your host publishes the repository root, it may also expose repository documentation and scripts; use a publish directory containing only the three site files when possible.
 
-A GitHub Pages deployment from `main` and `/ (root)` works without a build step. It also makes other tracked root files accessible, so use a dedicated deployment directory or workflow if you want to publish only the site assets. No custom domain is configured in this repository.
+### GitHub Pages
+
+The workflow in `.github/workflows/pages.yml` checks the site sources and deploys only the three website files on pushes to `main`. It can also be run manually from the Actions tab. GitHub Pages must use **GitHub Actions** as its publishing source. The deployment does not publish repository documentation or verification scripts.
+
+The custom domain is **wylom.com**, configured in the repository's Pages settings. Custom Actions deployments do not require a `CNAME` file. Configure these records with the domain's DNS provider:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | koalabuttz.github.io |
+
+Optional IPv6 records are `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, and `2606:50c0:8003::153` (type AAAA, name @). Do not leave conflicting address records or create wildcard records. Preserve unrelated records such as email configuration.
+
+Once DNS is correct and GitHub has issued the certificate, enable **Enforce HTTPS** in Pages settings. GitHub also recommends verifying domain ownership in the account's Pages settings using the provided TXT record. See [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
 ## Contributing
 
