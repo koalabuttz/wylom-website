@@ -1,6 +1,6 @@
 # WYŁOM Research website
 
-The static website for WYŁOM Research, David's independent research practice in Cambridge, exploring cybersecurity, AI agents, and networking.
+The static website for WYŁOM Research, an independent research practice based in Cambridge, founded and run by David Godlewski, exploring cybersecurity, AI agents, and networking.
 
 Built with semantic HTML, responsive CSS, and a small JavaScript theme switch. No framework, external fonts, analytics, backend, or build step.
 

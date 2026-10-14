@@ -114,7 +114,7 @@ def check_sources(root):
     require(normalized(document.heading) == "WYŁOM Research",
             "index.html: h1 must preserve WYŁOM Research")
     visible = normalized(document.visible).lower()
-    for phrase in ("independent research practice", "david", "cambridge",
+    for phrase in ("independent research practice", "david godlewski", "cambridge",
                    "cybersecurity", "ai agents", "networking",
                    "increasingly autonomous software", "understand and control",
                    "we move between the two", "selected projects",
