@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WYŁOM Research is David's independent research practice in Cambridge, exploring cybersecurity, AI agents, and networking through architecture research and experimental software.">
+    <meta name="theme-color" content="#101613">
+    <title>WYŁOM Research — Cybersecurity, AI Agents &amp; Networking</title>
+    <script src="./theme.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header page-shell">
+      <a class="wordmark" href="#top" aria-label="WYŁOM Research, back to top">
+        WYŁOM <span>Research</span>
+      </a>
+      <div class="header-controls">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#approach">Approach</a>
+        </nav>
+        <label class="theme-control" hidden>
+          <span>Light</span>
+          <input id="theme-toggle" type="checkbox" role="switch" aria-label="Dark mode" checked>
+          <span class="theme-track" aria-hidden="true"><span class="theme-thumb"></span></span>
+          <span>Dark</span>
+        </label>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">WYŁOM <span>Research</span></h1>
+        <p class="hero-positioning">Cybersecurity, AI agents, and networking.</p>
+        <p class="hero-introduction">What would it take to give AI agents more freedom to act, without losing sight of what they can do, what they did, and whether it worked?</p>
+        <a class="research-link" href="#research">Explore the projects <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section id="about" class="section section-split" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / About</p>
+          <h2 id="about-title">About WYŁOM</h2>
+        </div>
+        <div class="section-copy">
+          <p>WYŁOM Research is David's independent research practice in Cambridge. The work spans security, agent-oriented systems, and networking, combining architecture research with experimental software.</p>
+          <p>We explore how increasingly autonomous software fits into systems people can still understand and control. That brings together questions usually treated separately: how software is organised, how it communicates, and how it can fail or be misused.</p>
+        </div>
+      </section>
+
+      <section id="research" class="section" aria-labelledby="research-title">
+        <div class="research-heading">
+          <div class="section-heading">
+            <p class="eyebrow">02 / Research</p>
+            <h2 id="research-title">Selected projects</h2>
+          </div>
+          <p class="section-introduction">From the architecture of agent autonomy to software running on unexpected hardware.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-item" aria-labelledby="aos-title">
+            <p class="research-number">[01] Architecture research</p>
+            <h3 id="aos-title">An operating system<br>built around agents</h3>
+            <p class="project-description">AOS explores how an operating system could give agents explicit authority, versioned state, and recoverable changes. It is architecture research, not a working OS: the aim is to test the foundations before committing to an implementation.</p>
+            <a class="project-link" href="https://tangled.org/david.boston/AOS">Read the AOS research <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="research-item" aria-labelledby="prompt64-title">
+            <p class="research-number">[02] Agent interfaces</p>
+            <h3 id="prompt64-title">AI coding agents<br>from a Commodore 64</h3>
+            <p class="project-description">Prompt64 turns the Commodore 64 Ultimate into a terminal for monitoring and controlling AI coding agents. A native client and host bridge bring live activity, approval prompts, and code changes to a deliberately constrained interface.</p>
+            <a class="project-link" href="https://tangled.org/david.boston/prompt64">Explore Prompt64 <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="research-item" aria-labelledby="vita-title">
+            <p class="research-number">[03] Experimental networking</p>
+            <h3 id="vita-title">A VPN client<br>for the PlayStation Vita</h3>
+            <p class="project-description">tailscale-vita is a from-scratch Rust implementation of a Tailscale client for the PlayStation Vita. It brings encrypted networking and direct peer connections to homebrew software, working within the handheld's platform constraints.</p>
+            <a class="project-link" href="https://github.com/koalabuttz/tailscale-vita">Explore tailscale-vita <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="approach" class="section section-split" aria-labelledby="approach-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Approach</p>
+          <h2 id="approach-title">Architecture<br>and experiments.</h2>
+        </div>
+        <div class="section-copy approach-copy">
+          <p>Some questions need an architecture before they need code. Others are best explored by building something and seeing where it breaks. We move between the two—from thinking through how agents should operate to making software run on hardware it was never designed for.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-shell">
+      <p class="footer-brand">WYŁOM Research <span>/ Cambridge</span></p>
+      <nav class="footer-links" aria-label="Elsewhere">
+        <a href="https://tangled.org/david.boston">Tangled <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/koalabuttz">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </footer>
+  </body>
+</html>

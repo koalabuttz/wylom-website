@@ -1,0 +1,24 @@
+# Local verification notes and generated screenshots
+/VERIFICATION.md
+/verification-*.png
+
+# Local environments and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python caches and test output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local logs, editor settings, and OS files
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
